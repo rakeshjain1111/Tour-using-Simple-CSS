@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+    <!-- navbar start -->
+    <header>
+      <span class="logo">
+        <a href="index.html">Tour .</a>
+      </span>
+      <a href="javascript:void(0);" class=" menubtn">
+                  <i class="fa-solid fa-bars"></i>
+      </a>
+        <div class="nav"> 
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#">Dropdown &#x02228;</a>
+              <ul>
+                <li><a href="">Element</a></li>
+                <li><a href="">Menu-One</a></li>
+                <li><a href="">Menu-Two</a></li>
+                <li><a href="">Menu-Three</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contactus</a></li>
+          </ul>
+        </div>
+      </header>
+    <!-- navbar end -->
+    <!-- hero section start -->
+    <div class="hero">
+        <div class="main">
+            <h2 class="heading">
+                Let's Enjoy Your <br />Trip in
+                <span id="retype"></span>
+            </h2>
+            <div class="enqform">
+                <form action="">
+                  <select name="Destination" id="cars">
+                    <option value="Peru">Peru</option>
+                    <option value="Russia">Russia</option>
+                    <option value="US">US</option>
+                    <option value="France">France</option>
+                  </select>
+                  <input type="date" class="date" />
+                  <input type="text" placeholder="# of People" />
+                  <button type="submit" value="Search">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="heroslider">
+            <div class="slider">
+                <div class="sliderContainer">
+                  <div class="slide active">
+                    <img src="./assets/img/hero-slider-1.jpg" alt="slide" />
+                  </div>
+                  <div class="slide">
+                    <img src="./assets/img/hero-slider-2.jpg" alt="slide" />
+                  </div>
+                  <div class="slide">
+                    <img src="./assets/img/hero-slider-3.jpg" alt="slide" />
+                  </div>
+                  <div class="slide">
+                    <img src="./assets/img/hero-slider-4.jpg" alt="slide" />
+                  </div>
+                  <div class="slide">
+                    <img src="./assets/img/hero-slider-5.jpg" alt="slide" />
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- hero section end -->
+    <!-- service section start -->
+    <div class="service py-80">
+      <div class="content">
+        <h3>Our Services</h3>
+        <div class="line"></div>
+        <p class="py-30">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, 
+          there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+          a large language ocean.</p>
+      </div>
+      <div class="scontainer mx-auto">
+        <div class="box">
+          <div class="box-content">
+            <i class="fa-solid fa-envelope-open-text icon"></i>
+            <h4>Easy to Connect</h4>
+            <span>
+              Even the all-powerful Pointing has no control about the blind texts.
+            </span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <i class="fa-solid fa-phone-volume icon"></i>
+            <h4>24/7 Support</h4>
+            <span>
+              Even the all-powerful Pointing has no control about the blind texts.
+            </span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <i class="fa-solid fa-house icon"></i> 
+            <h4>Beautiful Condo</h4>
+            <span>
+              Even the all-powerful Pointing has no control about the blind texts.
+            </span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <i class="fa-solid fa-utensils icon"></i>
+            <h4>Restaurants & Cafe</h4>
+            <span>
+              Even the all-powerful Pointing has no control about the blind texts.
+            </span>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/img/hero-slider-1.jpg" />
+        </div>
+      </div> 
+    </div>
+    
+    <!-- service section end -->
+    <!-- counter section start -->
+    <div class="counter-container py-80">
+      <div class="counter">
+        <div class="count" data-target="9313">0</div>
+        <span class="caption">No. of Travels</span>
+      </div>
+      <div class="counter">
+        <div class="count" data-target="8492">0</div>
+        <span class="caption">No. of Clients</span>
+      </div>
+      <div class="counter">
+        <div class="count" data-target="100">0</div>
+        <span class="caption">No. of Employees</span>
+      </div>
+      <div class="counter">
+        <div class="count" data-target="120">0</div>
+        <span class="caption">No. of Countries</span>
+      </div>
+    </div>
+    <!-- counter section end -->
+       <!-- destination section start -->
+      
+    <div class="destination py-80">
+      <div class="content">
+        <h3>Popular Destination</h3>
+        <div class="line"></div>
+      </div>
+      <div class="owl-carousel owl-dest">
+        <div class="item">
+          <img src="./assets/img/hero-slider-1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./assets/img/hero-slider-2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./assets/img/hero-slider-3.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./assets/img/hero-slider-4.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./assets/img/hero-slider-5.jpg" alt="">
+        </div>
+       
+    </div>
+    </div>
+       <!-- destination section end -->
+        <!-- offer section start -->
+          <div class="offer py-80">
+            <div class="content">
+              <h3>Special Offers & Discounts</h3>
+              <div class="line"></div>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            </div>
+            <div class="offer-container">
+              <div class="card">
+                <img src="./assets/img/hero-slider-1.jpg" alt="">
+                <div class="card-body">
+                  <i class="fa-solid fa-location-dot"></i> <span>Itly</span>
+                  <h4>Rialto Mountains</h4>
+                  <span>$520.00</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./assets/img/hero-slider-2.jpg" alt="">
+                <div class="card-body">
+                  <i class="fa-solid fa-location-dot"></i> <span>Itly</span>
+                  <h4>Rialto Mountains</h4>
+                  <span>$520.00</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./assets/img/hero-slider-3.jpg" alt="">
+                <div class="card-body">
+                  <i class="fa-solid fa-location-dot"></i> <span>Itly</span>
+                  <h4>Rialto Mountains</h4>
+                  <span>$520.00</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./assets/img/hero-slider-4.jpg" alt="">
+                <div class="card-body">
+                  <i class="fa-solid fa-location-dot"></i> <span>Itly</span>
+                  <h4>Rialto Mountains</h4>
+                  <span>$520.00</span>
+                </div>
+              </div>
+          </div>
+          </div>
+         <!-- offer section end -->
+         <!--tour-video section start -->
+
+         <div class="tour-video  py-80">
+            <div class="video"></div>
+            <div class="video-content"></div>
+         </div>
+         <!--tour-video section end -->
+         
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+</body>
+</html>
