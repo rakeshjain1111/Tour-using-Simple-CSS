@@ -8,6 +8,37 @@
 //     }
 // }
 
+var typed=new Typed("#retype",{
+  strings:["New Zealand.","Maui.","Paris.", "San Francisco."],
+  typeSpeed:200,
+  backSpeed:150,
+  loop:true
+});
+
+setInterval(function(){
+  if(document.getElementsByClassName("slide")[0].classList.contains("active")){
+      document.getElementsByClassName("slide")[1].classList.add("active");
+      document.getElementsByClassName("slide")[0].classList.remove("active");
+  }
+ else if(document.getElementsByClassName("slide")[1].classList.contains("active")){
+      document.getElementsByClassName("slide")[2].classList.add("active");
+      document.getElementsByClassName("slide")[1].classList.remove("active");
+  }
+  else if(document.getElementsByClassName("slide")[2].classList.contains("active")){
+      document.getElementsByClassName("slide")[3].classList.add("active");
+      document.getElementsByClassName("slide")[2].classList.remove("active");
+  }
+  else if(document.getElementsByClassName("slide")[3].classList.contains("active")){
+      document.getElementsByClassName("slide")[4].classList.add("active");
+      document.getElementsByClassName("slide")[3].classList.remove("active");
+  }
+  else if(document.getElementsByClassName("slide")[4].classList.contains("active")){
+      document.getElementsByClassName("slide")[0].classList.add("active");
+      document.getElementsByClassName("slide")[4].classList.remove("active");
+  }
+  
+},6000);
+
 
 const counters = document.querySelectorAll('.count');
 const speed = 100;
@@ -51,3 +82,28 @@ $(document).ready(function(){
     }
   })
 });
+
+
+$(document).ready(function(){
+  $('.owl-test').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:false,
+      dots:true,
+      items:3,
+      autoplay:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+      }
+  })
+});
+
+
